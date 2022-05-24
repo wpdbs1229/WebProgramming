@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<body>
+	<form action="./save.html" method="POST">
+		메시지 : <input type="text" name="message"><br>
+		<h1>Form 관련 요소</h1>
+		<!-- type = "Text" -->
+		
+		<fieldset>
+			<legend>필수정보</legend>
+			<label for = "userid">ID : </label><input type="text" placeholder="영문으로만 써주세요" id = "userid"><br>
+ 
+			<!-- type = "Password" -->
+			<label for="userpw">Password :</label> <input type="password" id = "userpw"><br>
+
+			<!-- type = "radio" --> 
+			<!-- checked boolean 속성으로 사용자가 선택하지않아도 기본값으로 나오게하는 속성  -->
+			Gender : <label for = "male">남자</label><input type="radio" name="Gender" id ="male" checked> <label for="female">여자</label> <input type="radio" name="Gender" id ="female"><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>부가 정보</legend>
+			<!-- type = "checkbox" -->
+			Hobby : 
+			<label for="movie">영화</label> <input type="checkbox" name="hobby" checked id="movie"> 
+			<label for=" music"> 음악 </label> <input type="checkbox" name="hobby" id = "music"> <label for="read">독서</label> <input type="checkbox" name="hobby" id = "read"> 
+			<label for="soccer">축구</label> <input type="checkbox" name="hoby" id = soccer> 
+			<label for="baseball"> 야구</label> <input type="checkbox" name="hoby" id = "baseball"><br>
+
+
+			<!-- type = "file" -->
+			<input type="file" name=""><br>
+
+		
+			<!-- select -->
+			<label for="local">사는 지역 :</label> <select id ="local">
+				<option>서울</option>
+				<option>경기</option>
+				<option>충청</option>
+				<option selected>제주</option>
+				<option>강원</option>
+				<option>전라</option>
+			</select><br>
+			<!-- textarea -->
+			자기소개 : <textarea cols="30" rows="5" placeholder="자기소개는 간단하게 해주세요"></textarea><br>
+		</fieldset>
+		<!-- type = "button" , type = "image" -->
+		<button type="submit">전송</button>
+		<button type="cancle">취소</button>
+		
+		<input type="button" value="register"> <input type="image" src="./img/done.png" alt="done", width="100px", height="20px"><br>
+		<!-- submit, resrt -->
+		<input type="submit" value="submit"> <input type="reset" value="cancle"> <br>
+
+		
+	</form>	
+
+</body>
+</html>
